@@ -1,0 +1,94 @@
+:root{
+    --fondo: lightgray;
+    --fondo2: white;
+}
+body{
+    margin: 0 auto;
+    display: grid;
+    height: 1400px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr .5fr 4fr 1fr;
+    grid-template-areas: 
+    "header header header header"
+    "nav nav nav nav"
+    "main main main main"
+    "main main main main"
+    "footer footer footer footer"
+    ;
+    gap: 10px 30px;
+    padding: 10px;
+}
+header{
+    display: grid;
+    grid-area: header;
+    background-color: var(--fondo);
+    
+}
+nav{
+    display: grid;
+    
+    grid-area: nav;
+    background-color: var(--fondo);
+    
+}
+.cardd{
+
+    background-color: gray;
+    display: flex;
+    flex-flow: column;
+    padding: 10px;
+    display: grid;
+
+}
+.c1{
+    display: grid;
+    grid-area: c1;
+}
+.c2{
+    display: grid;
+    grid-area: c2;
+}
+.c3{
+    display: grid;
+    grid-area: c3;
+}
+.cardprincipal{
+    width: 100%;
+    background-color: lightgray;
+    height: 250px;
+}
+.card1{
+    background-color: lightgray;
+    width: 100%;
+    height: 70px;
+    margin-top: 10px;
+}
+aside{
+    display: grid;
+    background-color: var(--fondo2);
+    grid-area: aside;
+}
+.banner{
+    display: grid;
+    background-color: var(--fondo2);
+    grid-area: banner;
+}
+main{
+    display: grid;
+    padding: 10px;
+    grid-area: main;
+    background-color: var(--fondo);
+    gap: 20px 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr;
+    grid-template-areas: 
+    "banner banner banner aside"
+    "c1 c2 c3 aside"
+    ;
+}
+footer{
+    display: grid;
+    height: 200px;
+    grid-area: footer;
+    background-color: var(--fondo);
+}
